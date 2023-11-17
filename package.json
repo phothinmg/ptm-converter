@@ -1,0 +1,34 @@
+{
+  "name": "ptm-converter",
+  "version": "1.0.0",
+  "description": "Markdown to Html Converter",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "main": "src/index.js",
+  "types": "./src/index.d.ts",
+  "type": "module",
+  "author": "PTM",
+  "license": "MIT",
+  "keywords": [
+    "Markdown",
+    "Showdown",
+    "converter"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/showdown": "^2.0.4",
+    "rollup": "^4.4.1",
+    "showdown": "^2.1.0",
+    "showdown-highlight": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phothinmg/bamar-converter.git"
+  },
+  "dependencies": {
+    "ptm-frontmatter": "^1.0.0"
+  }
+}
