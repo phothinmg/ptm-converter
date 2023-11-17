@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phothinmg/bamar-converter.git"
+    "url": "git+https://github.com/phothinmg/ptm-converter.git"
   },
   "dependencies": {
     "ptm-frontmatter": "^1.0.0"
