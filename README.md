@@ -1,4 +1,6 @@
-## Markdown Converter (Showdown)
+## Markdown to HTML Converter
+
+![md-html](https://miro.medium.com/v2/resize:fit:1400/1*eZ7YPTqzcyFVoQxIOIQ9kQ.png)
 
 ### About
 
@@ -6,7 +8,9 @@ Markdown to HTML converter using [Showdown](https://github.com/showdownjs/showdo
 
 ### Install
 
-`npm i ptm-converter`
+```bash
+npm i ptm-converter
+```
 
 ### Usage
 
