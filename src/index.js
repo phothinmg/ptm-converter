@@ -176,9 +176,9 @@ const htmlTemplate = (opts={}) =>{
             </style>
             <h2>${tt}</h2>
             <small>${dat}</small>
-            <small>Reading Time : ${rt} minutes</small>
+            ${rt}
             <div>${pc}</div>
-            <small>Last Update : ${lud}</small>
+            ${lud}
         </div>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script src = "https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
@@ -250,10 +250,12 @@ class Converter {
         return this.formatDate(this.data.date)
     }
     get lastUpdatedDate(){
-        return this.formatDate(this.lastUpdate())
+        const a = this.formatDate(this.lastUpdate());
+        return `<small>Last Update : ${a}</small>`
     }
     get readingTime(){
-        return this.readTime(this.content)
+        const a = this.readTime(this.content);
+        return `<small>Reading Time : ${a} minutes</small>`
     }
     get json (){
         return JSON.stringify(this.filecontent())
