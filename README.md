@@ -4,7 +4,7 @@
 
 ### About
 
-Markdown to HTML converter using [Showdown](https://github.com/showdownjs/showdown), support only ***esm*** .
+Markdown to HTML converter using [Showdown](https://github.com/showdownjs/showdown), **ESM Only** .
 
 ### Install
 
