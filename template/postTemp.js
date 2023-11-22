@@ -172,9 +172,9 @@ const htmlTemplate = (opts={}) =>{
             </style>
             <h2>${tt}</h2>
             <small>${dat}</small>
-            <small>Reading Time : ${rt} minutes</small>
+            ${rt}
             <div>${pc}</div>
-            <small>Last Update : ${lud}</small>
+            ${lud}
         </div>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script src = "https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
