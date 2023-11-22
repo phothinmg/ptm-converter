@@ -11,7 +11,7 @@ export default{
     plugins: [
         resolve(), 
         commonjs(),
-        terser()
+        // terser()
     ],
-    external:['ptm-frontmatter']
+    external:['ptm-frontmatter', 'showdown', 'showdown-highlight']
 }

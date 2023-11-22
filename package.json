@@ -20,15 +20,15 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@types/showdown": "^2.0.4",
-    "rollup": "^4.4.1",
-    "showdown": "^2.1.0",
-    "showdown-highlight": "^3.1.0"
+    "rollup": "^4.4.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phothinmg/ptm-converter.git"
   },
   "dependencies": {
-    "ptm-frontmatter": "^1.0.0"
+    "ptm-frontmatter": "^1.0.0",
+    "showdown": "^2.1.0",
+    "showdown-highlight": "^3.1.0"
   }
 }

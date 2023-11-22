@@ -1,9 +1,9 @@
-export { Fs as default };
-declare class Fs {
-    constructor(e: any);
+export { Converter as default };
+declare class Converter {
+    constructor(filePath: any);
     filePath: any;
-    formatDate(e: any): string;
-    readTime(e: any): number;
+    formatDate(date: any): string;
+    readTime(text: any): number;
     lastUpdate(): any;
     convert(): any;
     filecontent(): {
