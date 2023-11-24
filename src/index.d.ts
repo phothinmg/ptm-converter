@@ -15,10 +15,11 @@ declare class Converter {
     get postTitle(): any;
     get postDate(): string;
     get lastUpdatedDate(): string;
-    get readingTime(): number;
+    get readingTime(): string;
     get json(): string;
     get convertedContent(): any;
     get postHtml(): string;
     get pageHtml(): string;
+    get html(): string;
 }
 //# sourceMappingURL=index.d.ts.map

@@ -278,6 +278,14 @@ class Converter {
             postContent: this.convertedContent
         })
     }
+
+    get html () {
+        const fc = fs.readFileSync(this.filePath);
+        const fcc = this.convert().makeHtml(fc);
+        return htmlTemplate({
+            postContent: fcc
+        })
+    }
    
 }
 
