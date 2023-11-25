@@ -1,6 +1,6 @@
 {
   "name": "ptm-converter",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Markdown to Html Converter",
   "scripts": {
     "build": "rollup -c"
