@@ -178,7 +178,8 @@ const htmlTemplate = (opts={}) =>{
         </div>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script src = "https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
-        <script src = "https://cdn.jsdelivr.net/gh/phothinmg/burma@main/css/six-general.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/hljsCopyBtn.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/themeSwitch.js"></script>
     
     `;
     return html

@@ -25,10 +25,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phothinmg/ptm-converter.git"
-  },
-  "dependencies": {
-    "ptm-frontmatter": "^1.0.0",
-    "showdown": "^2.1.0",
-    "showdown-highlight": "^3.1.0"
   }
 }
