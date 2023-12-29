@@ -2,15 +2,16 @@ import frontmatter from "ptm-frontmatter";
 import showdown from "showdown";
 import showdownHighlight from 'showdown-highlight';
 import fs from 'fs';
-import htmlTemplate from "../template/postTemp.js";
+import htmlTemplate from "./postTemp.js";
 
 // output
 // data - string
 class Converter {
-    constructor(filePath){
+    filePath: string;
+    constructor(filePath : string){
         this.filePath = filePath;
     }
-    formatDate(date){
+    formatDate(date: string){
         return new Date(date).toLocaleString('en-US',{
             weekday: "short",
             day: "numeric",
@@ -18,7 +19,7 @@ class Converter {
             year:"numeric"
         })
     };
-    readTime(text) {
+    readTime(text: string) {
         const wpm = 225;
         const words = text.trim().split(/\s+/).length;
         return Math.ceil(words / wpm);
@@ -91,22 +92,26 @@ class Converter {
 
     get pageHtml (){
         return htmlTemplate({
-            postContent: this.convertedContent
+            postContent: this.convertedContent,
+            postTitle: '',
+            postDate: '',
+            readingTime: '',
+            lastUpdate: ''
         })
     }
 
     get html () {
-        const fc = fs.readFileSync(this.filePath);
+        const fc: any = fs.readFileSync(this.filePath);
         const fcc = this.convert().makeHtml(fc);
         return htmlTemplate({
-            postContent: fcc
+            postContent: fcc,
+            postTitle: '',
+            postDate: '',
+            readingTime: '',
+            lastUpdate: ''
         })
     }
    
 }
 
 export default Converter;
-
-// const a = new Converter('./index.md').pageHtml
-
-// console.log(a)

@@ -1,10 +1,17 @@
 
-const htmlTemplate = (opts={}) =>{
-    const pc = opts.postContent === undefined ? console.error('Error') :  opts.postContent;
-    const tt = opts.postTitle === undefined ? '' : opts.postTitle ;
-    const dat = opts.postDate === undefined ? '' : opts.postDate;
-    const rt = opts.readingTime === undefined ? '' : opts.readingTime;
-    const lud = opts.lastUpdate === undefined ? '' : opts.lastUpdate;
+type props={
+    postContent: string;
+    postTitle: string;
+    postDate: string;
+    readingTime: string;
+    lastUpdate: string
+}
+const htmlTemplate = ({postContent, postTitle, postDate, readingTime, lastUpdate}: props) =>{
+    const pc = postContent === undefined ? console.error('Error') :  postContent;
+    const tt = postTitle === undefined ? '' : postTitle ;
+    const dat = postDate === undefined ? '' : postDate;
+    const rt = readingTime === undefined ? '' : readingTime;
+    const lud = lastUpdate === undefined ? '' : lastUpdate;
     const html = /* html */ `
         <div>
             <style>
@@ -176,13 +183,8 @@ const htmlTemplate = (opts={}) =>{
             <div>${pc}</div>
             ${lud}
         </div>
-        <script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script src = "https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/hljsCopyBtn.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/themeSwitch.js"></script>
-    
     `;
     return html
-}
+};
 
 export default htmlTemplate;
