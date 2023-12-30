@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "ptm-frontmatter": "^1.0.1",
-    "showdown": "^2.1.0",
-    "showdown-highlight": "^3.1.0"
+    "showdown": "^2.1.0"
   }
 }

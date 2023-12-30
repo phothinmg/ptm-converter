@@ -1,6 +1,5 @@
 import frontmatter from "ptm-frontmatter";
 import showdown from "showdown";
-import showdownHighlight from 'showdown-highlight';
 import fs from 'fs';
 import htmlTemplate from "./postTemp.js";
 
@@ -40,10 +39,7 @@ class Converter {
             tasklists: true,
             openLinksInNewWindow: true,
             emoji:true,
-            moreStyling: true,
-            extensions:[
-                showdownHighlight({ pre: true })
-            ]
+            moreStyling: true
             
         });
         a.setFlavor('github');
